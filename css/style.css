@@ -9,18 +9,18 @@ body{
     width: 100%;
     font-family:'Roboto';
     color: rgb(238, 238, 238);
-    font-size: 3rem;
+    font-size: 3.5rem;
+    margin-top: 20px;
 }
 
 header{
     display: flex;
     place-items: center;
     place-content: center;
-    margin-top: 50px;
 }
 
 header img{
-    width: 50px;  
+    width: 100px;  
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite; 
@@ -60,8 +60,6 @@ header img{
 
 #carrouselPlanetas{
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
     text-align: center;
     margin-top: 100px;
     display: flex;
@@ -86,6 +84,15 @@ header img{
     height: 300px;
 }
 
+.planeta250{
+    width: 250px;
+    height: 250px;
+}
+
+.planeta300{
+    width: 300px;
+    height: 300px;
+}
 .conjuntoBtn{
     flex-basis: 80%;
     text-align: center;
