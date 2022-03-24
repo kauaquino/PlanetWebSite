@@ -13,23 +13,18 @@ body{
     margin-top: 20px;
 }
 
-
 header{
     display: flex;
-    place-items: center;
-    place-content: center;
 }
 
 a{
-    text-decoration: none;
-    color:white;
+text-decoration: none;
+color:white;
 }
+
 
 header img{
     width: 100px;  
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite; 
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -64,7 +59,7 @@ header img{
    
 }
 
-#carrouselPlanetas{
+#itemMain{
     text-align: center;
     text-align: center;
     margin-top: 100px;
@@ -73,11 +68,12 @@ header img{
     justify-content: space-between;
     margin-bottom: 100px;
 }
-.itemCarrousel{
-    margin:auto;
+
+.item{
+    margin: auto;
 }
 
-.itemCarrouselFoto{
+.itemContent{
     border-radius: 50px;
     background-color: #6A77F0;
     width: 400px;
@@ -88,10 +84,6 @@ header img{
     align-items: center;
 }
 
-.itemCarrouselFoto img{
-    width: 300px;
-    height: 300px;
-}
 
 .planeta250{
     width: 250px;
