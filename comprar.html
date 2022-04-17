@@ -11,30 +11,52 @@
     <link rel="stylesheet" href="./css/comprar.css">
 </head>
 
+<script>
+    var countDownDate = new Date();
+    countDownDate.setMinutes(countDownDate.getMinutes() + 5);
+    countDownDate.getTime();
+    
+    var x = setInterval(function() {
+    
+      var now = new Date().getTime();
+    
+      var distance = countDownDate - now;
+    
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      document.getElementById("timer").innerHTML =  minutes + "m " + seconds + "s ";
+    
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "Acabou o tempo :(";
+      }
+    }, 1000);
+</script>
+
 <body>
     <header>
         <a href="/"><img src="./img/back.svg"></a>
     </header>
 
-    <section id="carrouselPlanetas">
-
-
-        <div class="itemCarrousel">
-            <div class="itemCarrouselFoto">
+    <section id="cards">
+        <div class="cardTransfira">
                 <br>
-                <h3>Transfira para essa carteira</h3>
-                <img src="./img/qrcode.svg">
+                <h3 class="tituloTransfira">Transfira para essa carteira</h3>
                 <br>
-                <div class="itemCarrouselFotoDiv">
+                <img class="qrCode" src="./img/qrcode.svg">
+                <br>
+                <br>
+                <div class="qrCodeCopy">
                     <p>12ASACXX3DAF24165Q</p>
                 </div>
-            </div>
         </div>
 
-        <div class="itemCarrousel">
-            <div class="itemCarrouselFoto">
+        <div class="cardMeusDados">
                 <br>
-                <h3>MEUS DADOS</h3>
+                <h3 style="    font-size: 30px;">MEUS DADOS</h3>
                 <br>
                 <div style=" margin-bottom: -35px;">
                     <h4 style="font-size: 24px;
@@ -66,7 +88,7 @@
                 </div>
                 <div style="    display: flex;
                 padding-top: 25px;
-                padding-bottom: 80px;
+                padding-bottom: 40px;
                 padding-left: 55px;">
                     <input type="checkbox">
                     <h4 style="font-size: 24px;">Aceita os nossos termos?</h4>
@@ -74,9 +96,11 @@
                 <div>
                     <a class="btn">Confirmar</a>
                 </div>
-            </div>
+                <p style="font-size: 30px; padding-bottom:10px;padding-top: 40px;">Tempo Restante</p>
+                <div style="font-size: 30px" id="timer">
+                  
+                </div>
         </div>
-
 
     </section>
 

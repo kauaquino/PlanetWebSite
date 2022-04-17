@@ -1,0 +1,87 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url('../img/background.gif');
+    height: 100%;
+    width: 100%;
+    color: rgb(238, 238, 238);
+    font-size: 3.5rem;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header img {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 80px;
+}
+
+.cardTransfira {
+    background-color: #6A77F0;
+    height: 590px;
+    width: 500px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+.tituloTransfira {
+    font-size: 30px;
+}
+
+.qrCode {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.qrCodeCopy {
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    width: 480px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#cards {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    place-content: space-around;
+}
+
+input[type="checkbox"] {
+    transform: scale(2);
+    border: none;
+    margin-right: 15px;
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    background: #4556EC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.cardMeusDados {
+    background-color: #6A77F0;
+    height: 590px;
+    width: 500px;
+    text-align: center;
+    border-radius: 14px;
+}
