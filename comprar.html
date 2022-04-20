@@ -15,91 +15,74 @@
     var countDownDate = new Date();
     countDownDate.setMinutes(countDownDate.getMinutes() + 5);
     countDownDate.getTime();
-    
-    var x = setInterval(function() {
-    
-      var now = new Date().getTime();
-    
-      var distance = countDownDate - now;
-    
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-      document.getElementById("timer").innerHTML =  minutes + "m " + seconds + "s ";
-    
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("timer").innerHTML = "Acabou o tempo :(";
-      }
+
+    var x = setInterval(function () {
+
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").innerHTML = minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "Acabou o tempo :(";
+        }
     }, 1000);
 </script>
 
 <body>
     <header>
-        <a href="/"><img src="./img/back.svg"></a>
+        <a href="./index.html"><img src="./img/back.svg"></a>
     </header>
 
     <section id="cards">
         <div class="cardTransfira">
-                <br>
-                <h3 class="tituloTransfira">Transfira para essa carteira</h3>
-                <br>
-                <img class="qrCode" src="./img/qrcode.svg">
-                <br>
-                <br>
-                <div class="qrCodeCopy">
-                    <p>12ASACXX3DAF24165Q</p>
-                </div>
+            <br>
+            <h3 class="tituloTransfira">Transfira para essa carteira</h3>
+            <br>
+            <img class="qrCode" src="./img/qrcode.svg">
+            <br>
+            <br>
+            <div class="qrCodeCopy">
+                <p>12ASACXX3DAF24165Q</p>
+            </div>
         </div>
 
         <div class="cardMeusDados">
-                <br>
-                <h3 style="    font-size: 30px;">MEUS DADOS</h3>
-                <br>
-                <div style=" margin-bottom: -35px;">
-                    <h4 style="font-size: 24px;
-                    text-align: justify;
-                   
-                    margin-left: 60px;
-                    margin-bottom: -15px;">Nome Completo</h4>
-                    <div style="width: 80%; text-align-last: justify;margin:auto;">
+            <br>
+            <h3 class="cardMeusDadosTitle">MEUS DADOS</h3>
+            <br>
+            <div class="alignForm">
+                <h4 class="inputFormTxt">Nome Completo</h4>
+                <div class="inputBox">
+                    <input class="inputForm">
+                </div>
+            </div>
+            <br>
+            <div>
+                <h4 class="inputFormTxt">CPF</h4>
+                <div class="inputBox">
 
-                        <input style="border: 0;
-                        border-radius: 4px;
-                        width: 100%;
-                        height: 30px;">
-                    </div>
+                    <input class="inputForm">
                 </div>
-                <br>
-                <div>
-                    <h4 style="font-size: 24px;
-                    text-align: justify;
-                    margin-left: 60px;
-                    margin-bottom: -15px;">CPF</h4>
-                    <div style="width: 80%; text-align-last: justify;margin:auto;">
+            </div>
+            <div class="inputCheckBox">
+                <input type="checkbox">
+                <h4 class="textTermo">Aceita os nossos termos?</h4>
+            </div>
+            <div>
+                <a class="btn">Confirmar</a>
+            </div>
+            <p class="tempoRestanteTxt">Tempo Restante</p>
+            <div id="timer">
 
-                        <input style="border: 0;
-                        border-radius: 4px;
-                        width: 100%;
-                        height: 30px;">
-                    </div>
-                </div>
-                <div style="    display: flex;
-                padding-top: 25px;
-                padding-bottom: 40px;
-                padding-left: 55px;">
-                    <input type="checkbox">
-                    <h4 style="font-size: 24px;">Aceita os nossos termos?</h4>
-                </div>
-                <div>
-                    <a class="btn">Confirmar</a>
-                </div>
-                <p style="font-size: 30px; padding-bottom:10px;padding-top: 40px;">Tempo Restante</p>
-                <div style="font-size: 30px" id="timer">
-                  
-                </div>
+            </div>
         </div>
 
     </section>

@@ -12,6 +12,9 @@ body{
     margin-top: 20px;
 }
 
+.carrouselTitle{
+    margin-bottom: 50px
+}
 
 header{
     display: flex;

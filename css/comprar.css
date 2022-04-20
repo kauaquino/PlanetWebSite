@@ -12,6 +12,59 @@ body {
     margin-top: 20px;
 }
 
+.carrouselTitle {
+    margin-bottom: 50px
+}
+
+.cardMeusDadosTitle {
+    font-size: 30px;
+}
+
+.inputBox {
+    width: 80%;
+    text-align-last: justify;
+    margin: auto;
+}
+
+.inputCheckBox {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    padding-left: 55px;
+}
+
+.tempoRestanteTxt {
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+#timer {
+    font-size: 30px
+}
+
+.textTermo {
+    font-size: 24px;
+}
+
+.inputForm {
+    border: 0;
+    border-radius: 4px;
+    width: 100%;
+    height: 30px;
+}
+
+.inputFormTxt {
+    font-size: 24px;
+    text-align: justify;
+    margin-left: 60px;
+    margin-bottom: -15px;
+}
+
+.alignForm {
+    margin-bottom: -35px;
+}
+
 a {
     text-decoration: none;
     color: white;
