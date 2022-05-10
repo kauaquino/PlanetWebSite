@@ -1,0 +1,122 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: url('../img/background.gif');
+    height: 100%;
+    width: 100%;
+    color: rgb(238, 238, 238);
+    font-size: 3.5rem;
+    margin-top: 20px;
+}
+
+.carrouselTitle{
+    margin-bottom: 50px
+}
+
+
+header{
+    display: flex;
+}
+
+a{
+text-decoration: none;
+color:white;
+}
+
+
+header img{
+    width: 100px;  
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.btnActionCarrousel{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: #6A77F0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.conjuntoBtn a{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: #6A77F0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+   
+}
+
+#itemMain{
+    text-align: center;
+    text-align: center;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.item{
+    margin: auto;
+}
+
+.itemContent{
+    border-radius: 50px;
+    background-color: #6A77F0;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    font-size: 30px;
+    place-content: center;
+    align-items: center;
+}
+
+.itemContent img {
+    width: 300px;
+}
+
+.itemContent h3{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.planeta250{
+    width: 250px;
+    height: 250px;
+}
+
+.planeta300{
+    width: 300px;
+    height: 300px;
+}
+.conjuntoBtn{
+    flex-basis: 80%;
+    text-align: center;
+}
+
+#botoes{
+    display: flex;
+    width: 100%;
+    place-content: center;
+    align-items: center;
+}
+
+.btnActionCarrousel img{
+    width: 30px;
+}
